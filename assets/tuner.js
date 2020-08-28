@@ -13,7 +13,7 @@ for (var i = 0; i < 30; i++)
 
 window.addEventListener("load", initialize);
 
-var correlation_worker = new Worker("correlation-worker.js");
+var correlation_worker = new Worker("../assets/correlation-worker.js");
 correlation_worker.addEventListener("message", interpret_correlation_result);
 
 function initialize()
