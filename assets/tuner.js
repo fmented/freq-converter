@@ -6,9 +6,9 @@ for (var i = 0; i < 30; i++)
 	var note_frequency = (C2 * Math.pow(2, i / 12)).toFixed(2);
 	var note_name = notes[i%12] + (Math.floor(i/12)+2) + ' = ' + (i+36);
 	var note = { "frequency": note_frequency, "name": note_name };
-	// var just_above = { "frequency": note_frequency * Math.pow(2, 1 / 48), "name": note_name + " >" };
-	// var just_below = { "frequency": note_frequency * Math.pow(2, -1 / 48), "name": note_name + " <" };
-	test_frequencies = test_frequencies.concat([ note ]);
+	var just_above = { "frequency": note_frequency * Math.pow(2, 1 / 48), "name": note_name + " >" };
+	var just_below = { "frequency": note_frequency * Math.pow(2, -1 / 48), "name": "< " + note_name  };
+	test_frequencies = test_frequencies.concat([ note, just_above, just_below ]);
 }
 
 window.addEventListener("load", initialize);
