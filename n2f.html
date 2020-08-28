@@ -1,0 +1,76 @@
+<html>
+<head>
+<script src="./midi.js"></script>
+<style>
+    body{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+       
+    }
+    .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6em;
+  overflow: hidden;
+}
+
+
+#main{
+
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    height: auto;
+    /* overflow: hidden; */
+
+}
+.wrapper p{
+    font-size: 3.5em;
+}
+
+.wrapper b{
+    font-size: 4em;
+}
+.wrapper h2{
+    font-size: 5em;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
+</style>
+</head>
+
+<body>
+
+    <div id="main">
+        <div class="wrapper">
+            <h2 id="freq"></h2>
+        
+        </div>
+        <div class="wrapper">
+            <p>
+                <span>Note to Frequency</span>
+                
+            </p>
+        </div>
+        <div class="wrapper">
+            <p>
+                <span>Formula:</span>
+            </p>
+            
+        </div>
+        <div class="wrapper">
+            <b>440&middot;2 <sup>(<span id="note"></span>-69) / 12</sup></b>
+        </div>
+
+    </div>
+    <footer>
+        Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>, <a href="https://www.flaticon.com/authors/retinaicons" title="Retinaicons">Retinaicons</a>, <a href="https://www.flaticon.com/authors/kirill-kazachek" title="Kirill Kazachek">Kirill Kazachek</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+    </footer>
+    
+</body>
+</html>

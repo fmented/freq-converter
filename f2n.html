@@ -1,0 +1,70 @@
+<html>
+<head>
+<script src="./tuner.js"></script>
+<style>
+    body{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+       
+    }
+    .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6em;
+  overflow: hidden;
+}
+
+
+#main{
+
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    height: auto;
+    /* overflow: hidden; */
+
+}
+.wrapper p{
+    font-size: 3.5em;
+}
+
+.wrapper b{
+    font-size: 4em;
+}
+.wrapper h2{
+    font-size: 5em;
+}
+</style>
+</head>
+
+<body>
+
+    <div id="main">
+        <div class="wrapper">
+            <h2 id="note-name"></h2>
+        
+        </div>
+        <div class="wrapper">
+            <p>
+                <span>Frequency to Note</span>
+                
+            </p>
+        </div>
+        <div class="wrapper">
+            <p>
+                <span>Formula:</span>
+            </p>
+            
+        </div>
+        <div class="wrapper">
+            <b>69 + 12 log<sub>2</sub></b><h2>(</h2><b><sup id="frequency">f</sup></b><h2>/</h2><b><sub>440</sub></b><h2>)</h2>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>
